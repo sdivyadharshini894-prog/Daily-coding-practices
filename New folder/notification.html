@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+.notification{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-left:6px solid #2563eb;
+    border-radius:8px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.notification h3{
+    color:#1e3c72;
+    margin-bottom:8px;
+}
+
+.notification p{
+    color:#555;
+    margin-bottom:5px;
+}
+
+.time{
+    color:gray;
+    font-size:14px;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+🔔 Notifications
+</header>
+
+<div class="container">
+
+<h2>Latest Updates</h2>
+
+<div class="notification">
+<h3>📥 Report Submitted</h3>
+<p>Your road damage report <b>RD001</b> has been submitted successfully.</p>
+<p class="time">Today - 10:15 AM</p>
+</div>
+
+<div class="notification">
+<h3>🔍 Under Review</h3>
+<p>Your report is currently being reviewed by the road maintenance department.</p>
+<p class="time">Today - 11:30 AM</p>
+</div>
+
+<div class="notification">
+<h3>🛠️ Repair In Progress</h3>
+<p>Repair work has started for the reported pothole.</p>
+<p class="time">Yesterday - 4:45 PM</p>
+</div>
+
+<div class="notification">
+<h3>✅ Repair Completed</h3>
+<p>The damaged road has been repaired successfully. Thank you for your report.</p>
+<p class="time">2 Days Ago</p>
+</div>
+
+<div class="buttons">
+
+<button onclick="window.location.href='dashboard.html'">
+🏠 Dashboard
+</button>
+
+<button onclick="window.location.href='my-reports.html'">
+📋 My Reports
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+alert("Notifications Loaded Successfully!");
+
+</script>
+
+</body>
+</html>

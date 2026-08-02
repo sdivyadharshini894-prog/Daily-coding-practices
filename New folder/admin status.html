@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Status Update</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:650px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    gap:15px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.save{
+    background:#28a745;
+}
+
+.save:hover{
+    background:#218838;
+}
+
+.back{
+    background:#2563eb;
+}
+
+.back:hover{
+    background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+🛠 Admin Status Update
+</header>
+
+<div class="container">
+
+<h2>Update Road Damage Report</h2>
+
+<form id="statusForm">
+
+<label>Report ID</label>
+
+<input
+type="text"
+value="RD001"
+readonly>
+
+<label>Current Status</label>
+
+<select id="status">
+
+<option>Pending</option>
+
+<option>In Progress</option>
+
+<option>Completed</option>
+
+</select>
+
+<label>Admin Remarks</label>
+
+<textarea
+id="remarks"
+rows="5"
+placeholder="Enter remarks..."></textarea>
+
+<div class="buttons">
+
+<button
+type="submit"
+class="save">
+Update Status
+</button>
+
+<button
+type="button"
+class="back"
+onclick="window.location.href='admin-dashboard.html'">
+Back
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("statusForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let status=document.getElementById("status").value;
+
+alert("Report Status Updated to : " + status);
+
+window.location.href="admin-dashboard.html";
+
+});
+
+</script>
+
+</body>
+</html>

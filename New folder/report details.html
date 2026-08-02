@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Details</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+h2{
+    color:#1e3c72;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.image-box{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.image-box img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+    border:2px solid #ccc;
+}
+
+.details{
+    margin-top:20px;
+}
+
+.details p{
+    font-size:18px;
+    margin:12px 0;
+}
+
+.details strong{
+    color:#1e3c72;
+}
+
+.status{
+    color:orange;
+    font-weight:bold;
+}
+
+.button-group{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.back{
+    background:#2563eb;
+}
+
+.back:hover{
+    background:#1d4ed8;
+}
+
+.home{
+    background:#28a745;
+}
+
+.home:hover{
+    background:#218838;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+📄 Report Details
+</header>
+
+<div class="container">
+
+<h2>Road Damage Report Information</h2>
+
+<div class="image-box">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Road Damage">
+
+</div>
+
+<div class="details">
+
+<p><strong>Report ID :</strong> RD001</p>
+
+<p><strong>Location :</strong> Karur Bus Stand</p>
+
+<p><strong>Damage Type :</strong> Pothole</p>
+
+<p><strong>Severity :</strong> High</p>
+
+<p><strong>AI Confidence :</strong> 96%</p>
+
+<p><strong>Description :</strong> Large pothole in the middle of the road causing traffic issues.</p>
+
+<p><strong>Date :</strong> 21-07-2026</p>
+
+<p><strong>Status :</strong> <span class="status">Pending</span></p>
+
+</div>
+
+<div class="button-group">
+
+<button class="back" onclick="window.location.href='my-reports.html'">
+Back
+</button>
+
+<button class="home" onclick="window.location.href='dashboard.html'">
+Dashboard
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+alert("Report Details Loaded Successfully");
+
+</script>
+
+</body>
+</html>

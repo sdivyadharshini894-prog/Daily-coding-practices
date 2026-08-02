@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Reports</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f2f2f2;
+}
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.progress{
+    color:blue;
+    font-weight:bold;
+}
+
+.completed{
+    color:green;
+    font-weight:bold;
+}
+
+.button-container{
+    text-align:center;
+    margin-top:25px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+📋 My Road Damage Reports
+</header>
+
+<div class="container">
+
+<h2>Submitted Reports</h2>
+
+<table>
+
+<tr>
+<th>Report ID</th>
+<th>Location</th>
+<th>Damage Type</th>
+<th>Severity</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>RD001</td>
+<td>Karur Bus Stand</td>
+<td>Pothole</td>
+<td>High</td>
+<td class="pending">Pending</td>
+<td>21-07-2026</td>
+</tr>
+
+<tr>
+<td>RD002</td>
+<td>Salem Road</td>
+<td>Crack</td>
+<td>Medium</td>
+<td class="progress">In Progress</td>
+<td>19-07-2026</td>
+</tr>
+
+<tr>
+<td>RD003</td>
+<td>Coimbatore Road</td>
+<td>Road Break</td>
+<td>High</td>
+<td class="completed">Completed</td>
+<td>15-07-2026</td>
+</tr>
+
+</table>
+
+<div class="button-container">
+
+<button onclick="window.location.href='report-details.html'">
+View Details
+</button>
+
+<button onclick="window.location.href='dashboard.html'">
+Back to Dashboard
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+alert("Welcome to My Reports");
+
+</script>
+
+</body>
+</html>

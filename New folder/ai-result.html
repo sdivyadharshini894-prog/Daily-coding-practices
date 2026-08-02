@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Detection Result</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+.result-box{
+    background:#eef5ff;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.result-box p{
+    font-size:18px;
+    margin:12px 0;
+}
+
+.result-box span{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.button-group{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+}
+
+.dashboard{
+    background:#2563eb;
+}
+
+.dashboard:hover{
+    background:#1d4ed8;
+}
+
+.reports{
+    background:#28a745;
+}
+
+.reports:hover{
+    background:#218838;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+🤖 AI Powered Road Damage Reporting System
+</header>
+
+<div class="container">
+
+<h2>AI Detection Result</h2>
+
+<div class="result-box">
+
+<p>🚧 <strong>Damage Detected:</strong> <span>Pothole</span></p>
+
+<p>📊 <strong>Severity:</strong> <span>High</span></p>
+
+<p>🎯 <strong>Confidence:</strong> <span>96%</span></p>
+
+<p>📍 <strong>Location:</strong> <span>Karur, Tamil Nadu</span></p>
+
+<p>💡 <strong>Recommendation:</strong> <span>Immediate repair is recommended to prevent accidents.</span></p>
+
+<p>✅ <strong>Status:</strong> <span>Report Successfully Submitted</span></p>
+
+</div>
+
+<div class="button-group">
+
+<button class="dashboard"
+onclick="window.location.href='dashboard.html'">
+Dashboard
+</button>
+
+<button class="reports"
+onclick="window.location.href='my-reports.html'">
+My Reports
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+alert("AI Analysis Completed Successfully!");
+
+</script>
+
+</body>
+</html>

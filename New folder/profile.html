@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:600px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-image{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.profile-image img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:3px solid #2563eb;
+}
+
+.profile-image input{
+    margin-top:15px;
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.save{
+    background:#28a745;
+}
+
+.save:hover{
+    background:#218838;
+}
+
+.dashboard{
+    background:#2563eb;
+}
+
+.dashboard:hover{
+    background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+👤 User Profile
+</header>
+
+<div class="container">
+
+<div class="profile-image">
+
+<img id="preview"
+src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+
+<br>
+
+<input
+type="file"
+id="photo"
+accept="image/*">
+
+</div>
+
+<h2>Profile Information</h2>
+
+<form id="profileForm">
+
+<label>Full Name</label>
+<input
+type="text"
+value="Dhanusri"
+required>
+
+<label>Email</label>
+<input
+type="email"
+value="dhanusri@example.com"
+required>
+
+<label>Mobile Number</label>
+<input
+type="tel"
+value="9876543210"
+required>
+
+<label>Address</label>
+<textarea rows="4">Karur, Tamil Nadu</textarea>
+
+<div class="buttons">
+
+<button
+type="submit"
+class="save">
+Save Changes
+</button>
+
+<button
+type="button"
+class="dashboard"
+onclick="window.location.href='dashboard.html'">
+Dashboard
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("photo").onchange=function(){
+
+const file=this.files[0];
+
+if(file){
+
+document.getElementById("preview").src=URL.createObjectURL(file);
+
+}
+
+};
+
+document.getElementById("profileForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Profile Updated Successfully!");
+
+});
+
+</script>
+
+</body>
+</html>
